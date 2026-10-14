@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "DRAFT CITATION METADATA (PRE-RELEASE PREVIEW). Do not cite as released software until formal public release."
+authors:
+  - name: "Anonymous Authors"
+title: "Cross-Person Identity Change Under Source-Coupled Multi-Human Generation: A Controlled UniPortrait Study"
+version: 1.1.0-draft
+abstract: "Controlled empirical study evaluating person-wise identity changes under native UniPortrait conditioning regimes."

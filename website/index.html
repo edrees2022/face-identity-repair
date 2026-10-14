@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Person Identity Change Under Source-Coupled Multi-Human Generation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="badge">Paper A — Controlled Empirical Study (Offline Private Preview)</div>
+      <h1 class="title">Cross-Person Identity Change Under Source-Coupled Multi-Human Generation: A Controlled UniPortrait Study</h1>
+      <p class="authors">Anonymous Authors</p>
+      <p class="affiliation">Double-Blind Peer Review Release Preview</p>
+      
+      <div class="hero-actions">
+        <a href="#findings" class="btn btn-primary">Explore Findings</a>
+        <a href="#replay" class="btn btn-secondary">Tier 1 Replay Guide</a>
+        <a href="#rights" class="btn btn-outline">Data & Asset Rights</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card overview">
+      <h2>Research Scope & Headline</h2>
+      <p>We empirically examine how target and co-present protected identities change under existing native UniPortrait conditioning regimes. Across 119 accepted two-person baseline scenes, Study 1 measures continuous identity-similarity changes under target-only single-ID generation versus an unconditioned comparator; Study 2 uses matched output seeds to evaluate single-ID versus dual-ID regimes. Results characterize the evaluated implementation rather than introducing a new generation algorithm or isolated mechanism ablation.</p>
+    </section>
+
+    <section id="findings" class="card">
+      <h2>Primary Quantitative Findings (Frozen Estimates)</h2>
+      <p class="subtitle">Evaluated on 119 accepted two-person cases at baseline seed 101 and POST seeds 1101, 2202, 3303.</p>
+      
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Study</th>
+              <th>Estimand Role</th>
+              <th>Contrast Definition</th>
+              <th>Sample / Denominator</th>
+              <th>Fitted Estimate</th>
+              <th>95% Case-Cluster CI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Study 1</strong></td>
+              <td>Protected Person (j)</td>
+              <td>A1 &minus; A0 Process Contrast</td>
+              <td>N = 597 (304 A1, 293 A0)</td>
+              <td class="num neg">&minus;0.557103</td>
+              <td class="ci">[&minus;0.582850, &minus;0.530484]</td>
+            </tr>
+            <tr>
+              <td><strong>Study 1</strong></td>
+              <td>Target Person (k)</td>
+              <td>A1 &minus; A0 Process Contrast</td>
+              <td>N = 597 (304 A1, 293 A0)</td>
+              <td class="num neg">&minus;0.215272</td>
+              <td class="ci">[&minus;0.245432, &minus;0.184669]</td>
+            </tr>
+            <tr class="highlight">
+              <td><strong>Study 2</strong></td>
+              <td><strong>Protected Person (j)</strong></td>
+              <td><strong>A2 &minus; A1 Paired Contrast (D<sub>j</sub>)</strong></td>
+              <td><strong>N = 287 pairs (111 cases)</strong></td>
+              <td class="num pos"><strong>+0.512918</strong></td>
+              <td class="ci"><strong>[+0.471434, +0.550259]</strong></td>
+            </tr>
+            <tr class="highlight">
+              <td><strong>Study 2</strong></td>
+              <td><strong>Target Person (k)</strong></td>
+              <td><strong>A2 &minus; A1 Paired Contrast (D<sub>k</sub>)</strong></td>
+              <td><strong>N = 287 pairs (111 cases)</strong></td>
+              <td class="num pos"><strong>+0.158853</strong></td>
+              <td class="ci"><strong>[+0.118903, +0.197523]</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Study 2</strong></td>
+              <td>Supportive Model S3</td>
+              <td>Full Conditional LMM Contrast</td>
+              <td>N = 623 (304 A1, 319 A2)</td>
+              <td class="num pos">+0.498569</td>
+              <td class="ci">[+0.458782, +0.538357]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="caption">Note: In paired comparisons, common baseline PRE cancels: D = ID_post(A2) - ID_post(A1). Positive D represents relative attenuation of degradation, not absolute identity restoration.</p>
+    </section>
+
+    <section class="card">
+      <h2>Tri-Axis Validation Concordance</h2>
+      <div class="grid-3">
+        <div class="metric-box">
+          <h3>V1: ID-Sim Concordance</h3>
+          <p class="metric-val">+0.231351</p>
+          <p class="metric-sub">Protected Contrast (95% CI: [0.207, 0.255])</p>
+          <p class="metric-desc">Independent metric using DINOv3 ViT-L/16 patch representations on 287 paired rows.</p>
+        </div>
+        <div class="metric-box">
+          <h3>V2: Blinded Human Evaluation</h3>
+          <p class="metric-val">H = +0.986667</p>
+          <p class="metric-sub">Protected Preference (95% CI: [0.965, 1.000])</p>
+          <p class="metric-desc">80 cases, 160 balanced packets, judged by 5 independent raters (800 responses).</p>
+        </div>
+        <div class="metric-box">
+          <h3>V3: Nuisance Sensitivity</h3>
+          <p class="metric-val">+0.516446</p>
+          <p class="metric-sub">Pose-Adjusted LMM (95% CI: [0.479, 0.542])</p>
+          <p class="metric-desc">Robust regression controlling for 6DRepNet head pose, area ratio, and aspect ratio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="qualitative" class="card">
+      <h2>Qualitative Case Comparison (Candidate Asset E02)</h2>
+      <div class="rights-gated-box">
+        <div class="gate-icon">&#128274;</div>
+        <h3>Visual Asset Display Gated Pending Clearance</h3>
+        <p>In compliance with privacy policies and dataset terms for FFHQ, SFHQ, and CelebA-HQ, facial photographs for illustrative Cases 054 and 051 are withheld from public web display until formal per-asset distribution clearance is finalized.</p>
+        <div class="case-metrics">
+          <div class="case-item">
+            <strong>Case 054 (Attenuation of Degradation):</strong><br>
+            Protected D<sub>j</sub> = +0.605, Target D<sub>k</sub> = +0.415 (Seed 3303)
+          </div>
+          <div class="case-item">
+            <strong>Case 051 (Negative Contrast / Appearance Divergence):</strong><br>
+            Protected D<sub>j</sub> = &minus;0.128, Target D<sub>k</sub> = &minus;0.201 (Seed 3303)
+          </div>
+        </div>
+        <p class="disclaimer">Spatial tracking boxes designate evaluated spatial assignment slots rather than independently verified facial identities.</p>
+      </div>
+    </section>
+
+    <section id="replay" class="card">
+      <h2>Tier 1 Quickstart (Offline CPU Replay)</h2>
+      <p>Execute the tested statistical models directly from the extracted private staging folder:</p>
+      <pre class="code-block"><code># In the extracted repository root:
+python scripts/verify_data_integrity.py
+python scripts/run_tier1a_analysis_replay.py --reps 1000
+python scripts/run_tier1b_frozen_verification.py
+pytest tests/</code></pre>
+    </section>
+
+    <section id="rights" class="card">
+      <h2>Scientific Boundaries & Disclosures</h2>
+      <ul>
+        <li><strong>Evaluated Architecture:</strong> Scope is bounded to native UniPortrait with Stable Diffusion v1.5 in two-person compositions.</li>
+        <li><strong>Complete Native Regimes:</strong> A1 and A2 represent distinct intact operational regimes; this study does not claim an isolated component-level causal ablation.</li>
+        <li><strong>Continuous Identity Similarity:</strong> Positive paired contrast denotes relative attenuation of identity loss rather than guaranteed absolute restoration.</li>
+        <li><strong>Scope Boundary:</strong> Paper A is strictly an empirical study of existing native regimes. It does not introduce a new generation algorithm or selective intervention policy (future Paper B).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Candidate-A Research Release &bull; Anonymous Review Preview &bull; 2026</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

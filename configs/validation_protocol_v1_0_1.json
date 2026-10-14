@@ -1,0 +1,141 @@
+{
+  "protocol_title": "Candidate-A Validation Protocol v1.0.1 \u2014 Technical-Only Amendment",
+  "PROTOCOL_VERSION": "1.0.1",
+  "PREVIOUS_PROTOCOL_VERSION": "1.0",
+  "PREVIOUS_PROTOCOL_SHA256": "89a71773ffb29e3bc0e072d497a328bce326cd165b73b8a22f5a7fcfdf8ae094",
+  "AMENDMENT_CLASS": "TECHNICAL_ONLY_NON_SCIENTIFIC",
+  "SCIENTIFIC_DESIGN_CHANGED": "NO",
+  "V1_DESIGN_CHANGED": "NO",
+  "V2_DESIGN_CHANGED": "NO",
+  "V3_DESIGN_CHANGED": "NO",
+  "STUDY1_CHANGED": "NO",
+  "STUDY2_CHANGED": "NO",
+  "SCIENTIFIC_DESIGN_LOCK": "APPROVED",
+  "VALIDATION_EXECUTION_AUTHORIZED": "NO",
+  "timestamp_utc": "2026-09-28T00:30:00Z",
+  "authority": "00 \u2014 Main Research Hub (Technical Amendment Ratification)",
+  "role_definition": "POST-LOCK INDEPENDENT ROBUSTNESS VALIDATION (Not a generative experiment, not a new primary endpoint, not re-analysis of Study 1 or 2)",
+  "upstream_immutability_statement": "Candidate-A Validation Protocol v1.0 defines a post-lock secondary robustness-validation layer on already frozen outputs only. Study 1 and Study 2 remain immutable. The N=119 cohort, target/protected roles, person-specific references, PRE images, A0/A1/A2 generated outputs, seeds [1101, 2202, 3303], structural/human correspondence records, evaluability and missingness states, Buffalo_L measurements, continuous Delta_ID = POST - PRE definition, Study-1 and Study-2 estimands, statistical models, Results Locks, Interpretation Locks, and Discussion Locks cannot be altered by V1\u2013V3. Validation cannot reopen exclusions, generate replacement outputs, change identity correspondence, redefine PASS/FAIL, replace Buffalo_L, modify primary hypotheses, or retroactively alter any Study-1/Study-2 result.",
+  "t1_environment_provenance": {
+    "approved_provenance_statement": "The validation environment was prepared post-lock and is not being used to redefine the historical Study-1/2 execution environment.",
+    "historical_environment_statement": "The historical Study-1/2 runtime environments are not reconstructed, modified, or reinterpreted by this amendment.",
+    "environment_classification": "SHARED_ENVIRONMENT_MODIFIED_POST_STUDY_FOR_VALIDATION",
+    "historical_study_environment_claim": "NONE",
+    "package_manifest": "results/CANDIDATE-A-VALIDATION/provenance/validation_environment_package_manifest_v1_0_1.json",
+    "pip_freeze": "results/CANDIDATE-A-VALIDATION/provenance/validation_environment_pip_freeze_v1_0_1.txt",
+    "conda_list": "results/CANDIDATE-A-VALIDATION/provenance/validation_environment_conda_list_v1_0_1.json"
+  },
+  "t2_display_staging_clarification": {
+    "statement": "The original v1.0 blinded packet manifest is retained as a superseded provenance artifact. Human deployment under v1.0.1 may use only the opaque staged deployment manifest. The frozen private authoritative action map, selected cases, selected seeds, packet IDs, and LEFT/RIGHT assignments remain unchanged.",
+    "superseded_manifest": "results/CANDIDATE-A-VALIDATION/manifests/v2_human_packet_manifest_blinded_v1.json",
+    "supersession_manifest": "results/CANDIDATE-A-VALIDATION/manifests/v2_blinded_manifest_supersession_v1_0_1.json",
+    "deployment_manifest": "results/CANDIDATE-A-VALIDATION/manifests/v2_human_packet_deployment_manifest_v1_0_1.json",
+    "staged_assets_dir": "results/CANDIDATE-A-VALIDATION/v2_display_assets/v1_0_1/",
+    "staging_verification_manifest": "results/CANDIDATE-A-VALIDATION/manifests/v2_display_asset_staging_private_v1_0_1.json"
+  },
+  "primary_endpoint_invariant": "Buffalo_L continuous self-identity transition remains primary and frozen. No categorical identity PASS/FAIL threshold is introduced.",
+  "axes": {
+    "V1": {
+      "name": "V1 \u2014 Independent Identity Evaluator",
+      "evaluator": "ID-Sim (Chae et al., CVPR 2026)",
+      "role": "SECONDARY INDEPENDENT IDENTITY-SIMILARITY ROBUSTNESS EVALUATOR",
+      "primary_endpoint": "Buffalo_L (UNCHANGED / FROZEN)",
+      "population": "existing 287 A1/A2 jointly measurable case*seed rows (111 contributing cases)",
+      "primary_estimand_role": "protected j",
+      "secondary_estimand_role": "target k",
+      "categorical_threshold": null,
+      "identity_rematching": "PROHIBITED (uses frozen correspondence)",
+      "metric_definitions": {
+        "Delta_IDSim": "d(REF, PRE) - d(REF, POST)",
+        "D_IDSim": "Delta_IDSim_A2 - Delta_IDSim_A1"
+      },
+      "statistical_model": "D ~ Seed + (1 | Case)",
+      "seed_marginalization": "equal 1/3 per seed [1101, 2202, 3303]",
+      "bootstrap": {
+        "method": "case-cluster percentile bootstrap",
+        "replicates_B": 5000,
+        "seed": 20260927
+      }
+    },
+    "V2": {
+      "name": "V2 \u2014 Blinded Human Identity Validation",
+      "sampling_frame": "111 paired contributing cases",
+      "selected_cases": 80,
+      "sampling_unit": "case",
+      "stratification": "target-role stratification (STRATUM_P1: target==person_1, STRATUM_P2: target==person_2)",
+      "seed_selection": "one jointly measurable seed per case (lexicographically smallest hash)",
+      "packet_counts": {
+        "protected_packets": 80,
+        "target_packets": 80,
+        "total_packets": 160
+      },
+      "raters_per_packet": 5,
+      "adaptive_rating": false,
+      "allowed_responses": {
+        "A2_preferred": 1,
+        "NO_CLEAR_DIFFERENCE": 0,
+        "A1_preferred": -1,
+        "UNABLE_TO_JUDGE": null
+      },
+      "min_judgeable_votes": 3,
+      "packet_score_formula": "H = (N_A2 - N_A1) / N_judgeable",
+      "primary_estimand": "mean protected packet score H_j",
+      "secondary_estimand": "mean target packet score H_k",
+      "categorical_identity_threshold": null,
+      "bootstrap": {
+        "method": "case-cluster percentile bootstrap",
+        "replicates_B": 5000,
+        "seed": 20260928
+      }
+    },
+    "V3": {
+      "name": "V3 \u2014 Nuisance and Alternative-Explanation Sensitivity Analysis",
+      "scientific_characterization": "NUISANCE AND ALTERNATIVE-EXPLANATION SENSITIVITY ANALYSIS ONLY (Never call causal confounder adjustment, causal deconfounding, or mechanism identification)",
+      "population": "same frozen 287 paired rows / 111 cases",
+      "nuisance_variables": [
+        "log face-area ratio: ln(wh / WH)",
+        "log1p Laplacian sharpness: ln(1 + var(Laplacian(gray)))",
+        "frozen SCRFD detection confidence",
+        "abs(yaw) from 6DRepNet 300W-LP",
+        "abs(pitch) from 6DRepNet 300W-LP",
+        "roll: descriptive only"
+      ],
+      "nuisance_rules": {
+        "arbitrary_nuisance_thresholds": "PROHIBITED",
+        "imputation": "PROHIBITED (report exact denominator)",
+        "stepwise_selection": "PROHIBITED",
+        "p_value_variable_selection": "PROHIBITED",
+        "prospective_standardization": "z(D_q) = (D_q - mean(D_q)) / sd(D_q) across available paired rows",
+        "degeneracy_rule": "if sd(D_q) == 0, mark DEGENERATE_INVARIANT_NUISANCE and omit from regression"
+      },
+      "models": {
+        "core_protected_model": "D_Buffalo_j ~ Seed + z(D_log_area) + z(D_log_sharpness) + z(D_det_confidence) + (1 | Case)",
+        "core_target_model": "D_Buffalo_k ~ Seed + z(D_log_area) + z(D_log_sharpness) + z(D_det_confidence) + (1 | Case)",
+        "pose_augmented_protected_model": "D_Buffalo_j ~ Seed + z(D_log_area) + z(D_log_sharpness) + z(D_det_confidence) + z(D_abs_yaw) + z(D_abs_pitch) + (1 | Case)",
+        "pose_augmented_target_model": "D_Buffalo_k ~ Seed + z(D_log_area) + z(D_log_sharpness) + z(D_det_confidence) + z(D_abs_yaw) + z(D_abs_pitch) + (1 | Case)"
+      },
+      "seed_marginalization": "equal 1/3 per seed [1101, 2202, 3303] at standardized nuisance contrasts = 0",
+      "bootstrap": {
+        "method": "case-cluster percentile bootstrap",
+        "replicates_B": 5000,
+        "seed": 20260929
+      }
+    }
+  },
+  "interpretation_taxonomy": {
+    "direction_expected": "positive A2 - A1 (consistent with locked Study-2 protected contrast)",
+    "per_axis_definitions": {
+      "CONCORDANT": "point_estimate > 0 AND 95% bootstrap CI lower bound > 0",
+      "PARTIALLY_CONCORDANT": "point_estimate > 0 AND 95% bootstrap CI includes 0",
+      "DISCORDANT": "point_estimate < 0 AND 95% bootstrap CI upper bound < 0",
+      "INCONCLUSIVE": "point_estimate <= 0 while CI includes 0, or point_estimate == 0, or analysis not estimable, or technical failure, or sparse human evidence (<3 judgeable votes)"
+    },
+    "overall_protected_primary_state": {
+      "OVERALL_CONCORDANT": "V1 == CONCORDANT AND V2 == CONCORDANT AND V3 == CONCORDANT",
+      "OVERALL_DISCORDANT": "ANY of V1, V2, V3 protected-primary axis is DISCORDANT",
+      "OVERALL_PARTIALLY_CONCORDANT": "NO axis is DISCORDANT AND not all three are CONCORDANT AND fewer than two axes are INCONCLUSIVE AND at least one axis is CONCORDANT or PARTIALLY_CONCORDANT",
+      "OVERALL_INCONCLUSIVE": "NO axis is DISCORDANT AND two or more axes are INCONCLUSIVE"
+    },
+    "note": "Statuses are defined for future evaluation; NO validation outcome is evaluated in this materialization task."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp_utc": "2026-09-21T21:01:38.540105+00:00",
+  "study_id": "CANDIDATE-A-STUDY2-A2",
+  "A2_measurable_N": 319,
+  "protected_Delta_ID_j_distribution": {
+    "N": 319,
+    "mean": -0.070549,
+    "sd": 0.208261,
+    "median": -1.5e-05,
+    "q1": -0.064465,
+    "q3": 0.03516,
+    "min": -0.773612,
+    "max": 0.342372
+  },
+  "target_Delta_ID_k_distribution": {
+    "N": 319,
+    "mean": -0.080126,
+    "sd": 0.213588,
+    "median": -0.015024,
+    "q1": -0.077919,
+    "q3": 0.029863,
+    "min": -0.804875,
+    "max": 0.30164
+  },
+  "quadrant_counts": {
+    "Q1_target_pos_protected_neg": 46,
+    "Q2_target_pos_protected_nonneg": 91,
+    "Q3_target_nonpos_protected_neg": 114,
+    "Q4_target_nonpos_protected_nonneg": 68
+  },
+  "quadrant_percentages": {
+    "Q1_target_pos_protected_neg": 14.42,
+    "Q2_target_pos_protected_nonneg": 28.53,
+    "Q3_target_nonpos_protected_neg": 35.74,
+    "Q4_target_nonpos_protected_nonneg": 21.32
+  },
+  "correlation": {
+    "pearson_r": 0.826727,
+    "pearson_p": 0.0,
+    "spearman_rho": 0.461802,
+    "spearman_p": 0.0
+  }
+}

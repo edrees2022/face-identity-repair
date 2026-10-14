@@ -1,0 +1,737 @@
+{
+  "manifest_title": "Candidate-A Authoritative Cohort Structural Accounting (N=119 Safe Variant)",
+  "timestamp_utc": "2026-09-17T18:57:09.012229+00:00",
+  "experiment_id": "CANDIDATE-A-CONFIRMATORY",
+  "schema_version": "2.0.0-sanitized",
+  "confirmatory_n": 119,
+  "achieved_n": 119,
+  "role_balance": {
+    "target_person_1_count": 60,
+    "target_person_2_count": 59,
+    "one_case_imbalance_reason": "PROSPECTIVE_POOL_EXHAUSTION_AT_ODD_TERMINAL_RANK"
+  },
+  "seeds": {
+    "pre_seed": 101,
+    "post_seeds": [
+      1101,
+      2202,
+      3303
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "conf_case_001",
+      "valid_accrual_rank": 1,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_002",
+      "valid_accrual_rank": 2,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_003",
+      "valid_accrual_rank": 3,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_004",
+      "valid_accrual_rank": 4,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_005",
+      "valid_accrual_rank": 5,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_006",
+      "valid_accrual_rank": 6,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_007",
+      "valid_accrual_rank": 7,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_008",
+      "valid_accrual_rank": 8,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_009",
+      "valid_accrual_rank": 9,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_010",
+      "valid_accrual_rank": 10,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_011",
+      "valid_accrual_rank": 11,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_012",
+      "valid_accrual_rank": 12,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_013",
+      "valid_accrual_rank": 13,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_014",
+      "valid_accrual_rank": 14,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_015",
+      "valid_accrual_rank": 15,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_016",
+      "valid_accrual_rank": 16,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_017",
+      "valid_accrual_rank": 17,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_018",
+      "valid_accrual_rank": 18,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_019",
+      "valid_accrual_rank": 19,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_020",
+      "valid_accrual_rank": 20,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_021",
+      "valid_accrual_rank": 21,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_022",
+      "valid_accrual_rank": 22,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_023",
+      "valid_accrual_rank": 23,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_024",
+      "valid_accrual_rank": 24,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_025",
+      "valid_accrual_rank": 25,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_026",
+      "valid_accrual_rank": 26,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_027",
+      "valid_accrual_rank": 27,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_028",
+      "valid_accrual_rank": 28,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_029",
+      "valid_accrual_rank": 29,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_030",
+      "valid_accrual_rank": 30,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_031",
+      "valid_accrual_rank": 31,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_032",
+      "valid_accrual_rank": 32,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_033",
+      "valid_accrual_rank": 33,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_034",
+      "valid_accrual_rank": 34,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_035",
+      "valid_accrual_rank": 35,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_036",
+      "valid_accrual_rank": 36,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_037",
+      "valid_accrual_rank": 37,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_038",
+      "valid_accrual_rank": 38,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_039",
+      "valid_accrual_rank": 39,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_040",
+      "valid_accrual_rank": 40,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_041",
+      "valid_accrual_rank": 41,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_042",
+      "valid_accrual_rank": 42,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_043",
+      "valid_accrual_rank": 43,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_044",
+      "valid_accrual_rank": 44,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_045",
+      "valid_accrual_rank": 45,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_046",
+      "valid_accrual_rank": 46,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_047",
+      "valid_accrual_rank": 47,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_048",
+      "valid_accrual_rank": 48,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_049",
+      "valid_accrual_rank": 49,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_050",
+      "valid_accrual_rank": 50,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_051",
+      "valid_accrual_rank": 51,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_052",
+      "valid_accrual_rank": 52,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_053",
+      "valid_accrual_rank": 53,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_054",
+      "valid_accrual_rank": 54,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_055",
+      "valid_accrual_rank": 55,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_056",
+      "valid_accrual_rank": 56,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_057",
+      "valid_accrual_rank": 57,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_058",
+      "valid_accrual_rank": 58,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_059",
+      "valid_accrual_rank": 59,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_060",
+      "valid_accrual_rank": 60,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_061",
+      "valid_accrual_rank": 61,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_062",
+      "valid_accrual_rank": 62,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_063",
+      "valid_accrual_rank": 63,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_064",
+      "valid_accrual_rank": 64,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_065",
+      "valid_accrual_rank": 65,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_066",
+      "valid_accrual_rank": 66,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_067",
+      "valid_accrual_rank": 67,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_068",
+      "valid_accrual_rank": 68,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_069",
+      "valid_accrual_rank": 69,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_070",
+      "valid_accrual_rank": 70,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_071",
+      "valid_accrual_rank": 71,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_072",
+      "valid_accrual_rank": 72,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_073",
+      "valid_accrual_rank": 73,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_074",
+      "valid_accrual_rank": 74,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_075",
+      "valid_accrual_rank": 75,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_076",
+      "valid_accrual_rank": 76,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_077",
+      "valid_accrual_rank": 77,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_078",
+      "valid_accrual_rank": 78,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_079",
+      "valid_accrual_rank": 79,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_080",
+      "valid_accrual_rank": 80,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_081",
+      "valid_accrual_rank": 81,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_082",
+      "valid_accrual_rank": 82,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_083",
+      "valid_accrual_rank": 83,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_084",
+      "valid_accrual_rank": 84,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_085",
+      "valid_accrual_rank": 85,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_086",
+      "valid_accrual_rank": 86,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_087",
+      "valid_accrual_rank": 87,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_088",
+      "valid_accrual_rank": 88,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_089",
+      "valid_accrual_rank": 89,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_090",
+      "valid_accrual_rank": 90,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_091",
+      "valid_accrual_rank": 91,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_092",
+      "valid_accrual_rank": 92,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_093",
+      "valid_accrual_rank": 93,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_094",
+      "valid_accrual_rank": 94,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_095",
+      "valid_accrual_rank": 95,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_096",
+      "valid_accrual_rank": 96,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_097",
+      "valid_accrual_rank": 97,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_098",
+      "valid_accrual_rank": 98,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_099",
+      "valid_accrual_rank": 99,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_100",
+      "valid_accrual_rank": 100,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_101",
+      "valid_accrual_rank": 101,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_102",
+      "valid_accrual_rank": 102,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_103",
+      "valid_accrual_rank": 103,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_104",
+      "valid_accrual_rank": 104,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_105",
+      "valid_accrual_rank": 105,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_106",
+      "valid_accrual_rank": 106,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_107",
+      "valid_accrual_rank": 107,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_108",
+      "valid_accrual_rank": 108,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_109",
+      "valid_accrual_rank": 109,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_110",
+      "valid_accrual_rank": 110,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_111",
+      "valid_accrual_rank": 111,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_112",
+      "valid_accrual_rank": 112,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_113",
+      "valid_accrual_rank": 113,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_114",
+      "valid_accrual_rank": 114,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_115",
+      "valid_accrual_rank": 115,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_116",
+      "valid_accrual_rank": 116,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_117",
+      "valid_accrual_rank": 117,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    },
+    {
+      "case_id": "conf_case_118",
+      "valid_accrual_rank": 118,
+      "target_role": "person_2",
+      "protected_role": "person_1"
+    },
+    {
+      "case_id": "conf_case_119",
+      "valid_accrual_rank": 119,
+      "target_role": "person_1",
+      "protected_role": "person_2"
+    }
+  ]
+}

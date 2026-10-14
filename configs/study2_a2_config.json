@@ -1,0 +1,16 @@
+{
+  "experiment_id": "CANDIDATE-A-STUDY2-A2",
+  "protocol_version": "v1.1",
+  "cohort_size": 119,
+  "pre_seed": 101,
+  "post_seeds": [
+    1101,
+    2202,
+    3303
+  ],
+  "planned_pairs": 357,
+  "primary_paired_model": "D ~ Seed + (1 | Case)",
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260921,
+  "supportive_model_s3": "Delta_ID ~ Action * Seed + (1 + Action | Case) + (1 | Case:Seed)"
+}

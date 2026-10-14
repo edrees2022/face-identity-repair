@@ -1,0 +1,87 @@
+{
+  "title": "Candidate-A Confirmatory Primary & Secondary Inferential Analysis",
+  "experiment_id": "CANDIDATE-A-CONFIRMATORY",
+  "timestamp_utc": "2026-09-18T20:23:10.406071+00:00",
+  "primary_outcome_j": {
+    "outcome_name": "Delta_ID_j",
+    "role": "PROTECTED_PERSON",
+    "theta_A1_j": {
+      "point_estimate": -0.567904,
+      "bootstrap_se": 0.015604,
+      "ci_95": [
+        -0.597297,
+        -0.536832
+      ]
+    },
+    "theta_A0_j": {
+      "point_estimate": -0.010801,
+      "bootstrap_se": 0.010925,
+      "ci_95": [
+        -0.030899,
+        0.011336
+      ]
+    },
+    "theta_D_j_contrast": {
+      "point_estimate": -0.557103,
+      "bootstrap_se": 0.013219,
+      "ci_95": [
+        -0.58285,
+        -0.530484
+      ]
+    },
+    "variance_components": {
+      "tau_A0_sq": 0.008743,
+      "tau_A1_sq": 0.028059,
+      "cov_A0_A1": 0.01138,
+      "sigma_A0_sq": 0.009076,
+      "sigma_A1_sq": 0.002326
+    },
+    "bootstrap_diagnostics": {
+      "total_resamples": 5000,
+      "successful_fits": 5000,
+      "failed_fits": 0,
+      "failure_rate": 0.0
+    }
+  },
+  "secondary_outcome_k": {
+    "outcome_name": "Delta_ID_k",
+    "role": "TARGET_PERSON",
+    "theta_A1_k": {
+      "point_estimate": -0.236904,
+      "bootstrap_se": 0.014251,
+      "ci_95": [
+        -0.265309,
+        -0.209629
+      ]
+    },
+    "theta_A0_k": {
+      "point_estimate": -0.021632,
+      "bootstrap_se": 0.009013,
+      "ci_95": [
+        -0.038848,
+        -0.003419
+      ]
+    },
+    "theta_D_k_contrast": {
+      "point_estimate": -0.215272,
+      "bootstrap_se": 0.015603,
+      "ci_95": [
+        -0.245432,
+        -0.184669
+      ]
+    },
+    "variance_components": {
+      "tau_A0_sq": 0.004624,
+      "tau_A1_sq": 0.014636,
+      "cov_A0_A1": 0.002716,
+      "sigma_A0_sq": 0.010691,
+      "sigma_A1_sq": 0.024205
+    },
+    "bootstrap_diagnostics": {
+      "total_resamples": 5000,
+      "successful_fits": 5000,
+      "failed_fits": 0,
+      "failure_rate": 0.0
+    }
+  }
+}

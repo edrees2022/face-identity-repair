@@ -1,0 +1,61 @@
+{
+  "title": "Candidate-A Confirmatory Exploratory Joint Target/Protected Analysis",
+  "experiment_id": "CANDIDATE-A-CONFIRMATORY",
+  "timestamp_utc": "2026-09-18T20:23:10.981388+00:00",
+  "results_by_action": {
+    "A1": {
+      "evaluable_N": 304,
+      "quadrants": {
+        "Q1_k_pos_j_neg": {
+          "count": 29,
+          "percentage": 9.54
+        },
+        "Q2_k_pos_j_nonneg": {
+          "count": 0,
+          "percentage": 0.0
+        },
+        "Q3_k_nonpos_j_neg": {
+          "count": 275,
+          "percentage": 90.46
+        },
+        "Q4_k_nonpos_j_nonneg": {
+          "count": 0,
+          "percentage": 0.0
+        }
+      },
+      "correlations": {
+        "pearson_r": 0.09064,
+        "pearson_p_value": 0.11477246141348592,
+        "spearman_rho": 0.026326,
+        "spearman_p_value": 0.6475283770139482
+      }
+    },
+    "A0": {
+      "evaluable_N": 293,
+      "quadrants": {
+        "Q1_k_pos_j_neg": {
+          "count": 45,
+          "percentage": 15.36
+        },
+        "Q2_k_pos_j_nonneg": {
+          "count": 77,
+          "percentage": 26.28
+        },
+        "Q3_k_nonpos_j_neg": {
+          "count": 118,
+          "percentage": 40.27
+        },
+        "Q4_k_nonpos_j_nonneg": {
+          "count": 53,
+          "percentage": 18.09
+        }
+      },
+      "correlations": {
+        "pearson_r": 0.491008,
+        "pearson_p_value": 3.481343434528752e-19,
+        "spearman_rho": 0.452616,
+        "spearman_p_value": 3.3325206525138563e-16
+      }
+    }
+  }
+}

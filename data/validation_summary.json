@@ -1,0 +1,86 @@
+{
+  "manifest_title": "Candidate-A Integrated Tri-Axis Validation Result (Final Clean Lock)",
+  "version": "1.0.1",
+  "timestamp_utc": "2026-10-04T23:30:00Z",
+  "governance": {
+    "authority": "00 — CANDIDATE-A VALIDATION PROGRAM DIRECTORATE",
+    "institutional_documentation_status": "PENDING_FILE_UPLOAD"
+  },
+  "primary_anchor_study2_buffalo": {
+    "evaluator": "Buffalo_L (InsightFace)",
+    "protected_estimate": 0.512918,
+    "protected_ci_95": [
+      0.471434,
+      0.550259
+    ],
+    "target_estimate": 0.158853,
+    "target_ci_95": [
+      0.118903,
+      0.197523
+    ],
+    "status": "LOCKED_PRIMARY_ANCHOR"
+  },
+  "axis_results": {
+    "V1_IDSIM": {
+      "axis_name": "V1 — Independent Identity Evaluator (ArcFace)",
+      "protected_estimate": 0.231351,
+      "protected_ci_95": [
+        0.20744,
+        0.254732
+      ],
+      "target_estimate": 0.072272,
+      "target_ci_95": [
+        0.04817,
+        0.097237
+      ],
+      "status": "CONCORDANT"
+    },
+    "V2_HUMAN": {
+      "axis_name": "V2 — Prospective Rater-Blinded Human Identity Evaluation",
+      "execution_basis": "CLEAN_REPRODUCTION_v1_0_1",
+      "protected_h_estimate": 0.986667,
+      "protected_ci_95": [
+        0.965,
+        1.0
+      ],
+      "target_h_estimate": 0.401948,
+      "target_ci_95": [
+        0.304816,
+        0.498673
+      ],
+      "status": "CONCORDANT"
+    },
+    "V3_NUISANCE": {
+      "axis_name": "V3 — Measured Nuisance Sensitivity",
+      "core_model_protected": 0.516443,
+      "core_model_protected_ci_95": [
+        0.480038,
+        0.540722
+      ],
+      "core_model_target": 0.160105,
+      "core_model_target_ci_95": [
+        0.124845,
+        0.189875
+      ],
+      "pose_model_protected": 0.516446,
+      "pose_model_protected_ci_95": [
+        0.479039,
+        0.541718
+      ],
+      "pose_model_target": 0.160085,
+      "pose_model_target_ci_95": [
+        0.126029,
+        0.190656
+      ],
+      "status": "CONCORDANT"
+    }
+  },
+  "integrated_verdict": {
+    "V1_IDSIM_STATUS": "CONCORDANT",
+    "V2_HUMAN_STATUS": "CONCORDANT",
+    "V3_NUISANCE_SENSITIVITY_STATUS": "CONCORDANT",
+    "INTEGRATED_VALIDATION_STATUS": "OVERALL_CONCORDANT",
+    "locked_taxonomy_rule": "OVERALL_CONCORDANT (All three prespecified validation axes were directionally concordant under the locked validation taxonomy)",
+    "scientific_interpretation": "All three prespecified validation axes were directionally concordant under the locked validation taxonomy. The measured nuisance variables did not provide a trivial explanation for the observed protected-person A2−A1 Buffalo_L contrast. Target-person ratings contained substantially more NO_CLEAR_DIFFERENCE responses than protected-person ratings."
+  }
+}
