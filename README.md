@@ -17,7 +17,7 @@ We empirically characterize how **target and co-present protected identities cha
 
 **This study does not introduce a new generative model.** It evaluates three conditioning regimes already implemented in UniPortrait (A0, A1, A2) using continuous cosine-similarity transitions (ΔID) measured via InsightFace Buffalo_L.
 
-**[📄 Paper](docs/)** &nbsp;|&nbsp; **[🌐 Project Website](https://eds-001.github.io/candidate-a-cross-person-identity/)** &nbsp;|&nbsp; **[💻 Code](#tier-1-quickstart)**
+**[📄 Paper](docs/)** &nbsp;|&nbsp; **[🌐 Project Website](https://edrees2022.github.io/face-identity-repair/)** &nbsp;|&nbsp; **[💻 Code](#tier-1-quickstart)**
 
 ---
 
@@ -55,11 +55,25 @@ Under A1 conditioning: **90.46% of 304 realizations** fall in quadrant Q3 (both 
 
 ---
 
-## Study 2 Paired Contrast Figure
+## Figures
+
+### Figure 1 — Study 2 Paired Contrasts
 
 ![Study 2 Paired Contrasts: ΔID(A2)−ΔID(A1) across 111 cases](docs/assets/fig_study2_paired_contrasts.png)
 
-*Per-case ΔID(A2) − ΔID(A1) values for protected (j) and target (k) persons across 111 A2-measurable cases. Pearson r = 0.827 between paired protected/target ΔID values in A2.*
+*Per-case ΔID(A2) − ΔID(A1) values for protected (j) and target (k) persons across 111 A2-measurable cases. Pearson r = 0.827 between paired protected/target ΔID values in A2. Dashed orange line marks fitted contrast = +0.513.*
+
+### Figure 2 — Identity Calibration: Genuine vs. Impostor Distributions
+
+![InsightFace Buffalo_l Cosine Similarity Distributions on LFW Subset](docs/assets/genuine_impostor_distribution.png)
+
+*InsightFace (buffalo_l) cosine similarity distributions on LFW subset used for identity threshold calibration. Genuine pairs (N=90, Mean=0.665) and impostor pairs (N=3,915, Mean=0.007) show clean bimodal separation. EER threshold = 0.1296, FAR ≤ 1% threshold = 0.1535.*
+
+### Figure 3 — FAR/FRR Curves and ROC
+
+![FAR & FRR vs Decision Threshold and ROC Curve](docs/assets/identity_threshold_curves.png)
+
+*Left: FAR (blue) and FRR (red) curves vs. decision threshold — EER at θ = 0.1296 (green dashed). Right: ROC curve on buffalo_l LFW subset — near-perfect separation confirming evaluator reliability for this benchmark domain.*
 
 ---
 
@@ -80,8 +94,8 @@ Under A1 conditioning: **90.46% of 304 realizations** fall in quadrant Q3 (both 
 
 ```bash
 # Clone
-git clone https://github.com/eds-001/candidate-a-cross-person-identity.git
-cd candidate-a-cross-person-identity
+git clone https://github.com/edrees2022/face-identity-repair.git
+cd face-identity-repair
 
 # Install pinned dependencies
 pip install -r environment/requirements-analysis.txt
@@ -129,7 +143,7 @@ Target    95% CI: [+0.118903, +0.197523]  SE: 0.020346
 ## Repository Structure
 
 ```
-candidate-a-cross-person-identity/
+face-identity-repair/
 ├── data/                          # Frozen numerical results & safe cohort manifest
 │   ├── cohort_n119_safe_manifest.json   # Sanitized (no source filenames/prompts)
 │   ├── study1_inference_summary.json    # Study 1 frozen LMM estimates
@@ -151,7 +165,9 @@ candidate-a-cross-person-identity/
 ├── docs/                          # GitHub Pages website
 │   ├── index.html
 │   └── assets/
-│       └── fig_study2_paired_contrasts.png
+│       ├── fig_study2_paired_contrasts.png    # Figure 1: Study 2 paired contrasts
+│       ├── genuine_impostor_distribution.png  # Figure 2: Identity calibration distributions
+│       └── identity_threshold_curves.png      # Figure 3: FAR/FRR & ROC curves
 ├── smoke_test.sh                  # One-command verification
 ├── CITATION.cff                   # Citation metadata (pre-publication draft)
 └── LICENSE_STATUS.md              # Licensing status
@@ -167,7 +183,7 @@ candidate-a-cross-person-identity/
 - Frozen numerical summaries in `data/`: May be inspected for reproducibility verification
 - Source face photographs: **Not included** — user must acquire SFHQ/FFHQ independently
 - Biometric embeddings: **Not included** — private research artifacts
-- Figure `fig_study2_paired_contrasts.png`: Non-identifying aggregate scatter plot; no face images
+- Figures `fig_study2_paired_contrasts.png`, `genuine_impostor_distribution.png`, `identity_threshold_curves.png`: Non-identifying aggregate plots; no face images
 
 **Upstream Dependencies:**
 - [UniPortrait](https://github.com/junjiehe96/UniPortrait) (evaluated natively, no modifications)
@@ -187,7 +203,7 @@ candidate-a-cross-person-identity/
   author = {Anonymous Authors},
   year   = {2026},
   note   = {Preprint — under review.
-            Code: https://github.com/eds-001/candidate-a-cross-person-identity}
+            Code: https://github.com/edrees2022/face-identity-repair}
 }
 ```
 

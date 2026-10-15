@@ -407,10 +407,23 @@
     </div>
     <p style="font-size:0.78rem;color:#888;margin-top:0.5rem;">Bootstrap: 5,000 case-cluster percentile replicates, seed 20260921. Evaluator: InsightFace Buffalo_L.</p>
 
-    <!-- Figure -->
-    <div class="figure-wrap">
+    <!-- Figures Section -->
+    <h2 style="margin-top:2.5rem;">Figures</h2>
+    <p class="section-sub">All figures are non-identifying aggregate plots — no face photographs included.</p>
+
+    <div class="figure-wrap" id="fig1">
       <img src="assets/fig_study2_paired_contrasts.png" alt="Study 2 paired contrasts scatter plot showing ΔID(A2)−ΔID(A1) for target and protected persons across 111 cases">
-      <p class="figure-caption"><strong>Figure: Study 2 Paired Contrasts.</strong> Per-case ΔID(A2) − ΔID(A1) values for protected (j, primary) and target (k, secondary) persons across 111 A2-measurable cases. Positive values indicate attenuation of identity degradation under dual-ID conditioning relative to single-ID conditioning.</p>
+      <p class="figure-caption"><strong>Figure 1: Study 2 Paired Contrasts (N=287 rows, 111 cases).</strong> Per-case ΔID(A2) − ΔID(A1) values for protected (j, primary) and target (k, secondary) persons. Positive Dⱼ values indicate attenuation of identity degradation under dual-ID conditioning (A2) relative to single-ID conditioning (A1). Dashed orange line = fitted contrast +0.513. Pearson r = 0.827 between paired protected/target ΔID in A2.</p>
+    </div>
+
+    <div class="figure-wrap" id="fig2">
+      <img src="assets/genuine_impostor_distribution.png" alt="InsightFace buffalo_l cosine similarity distributions for genuine and impostor pairs on LFW subset">
+      <p class="figure-caption"><strong>Figure 2: Identity Evaluator Calibration — Genuine vs. Impostor Distributions.</strong> InsightFace (buffalo_l) cosine similarity distributions on LFW subset used for identity threshold calibration. Genuine pairs (N=90, Mean=0.665) and impostor pairs (N=3,915, Mean=0.007) show clean bimodal separation with minimal overlap. EER threshold θ = 0.1296 (green dashed), FAR &le; 1% threshold = 0.1535 (orange).</p>
+    </div>
+
+    <div class="figure-wrap" id="fig3">
+      <img src="assets/identity_threshold_curves.png" alt="FAR and FRR vs decision threshold curves and ROC curve for buffalo_l on LFW subset">
+      <p class="figure-caption"><strong>Figure 3: FAR/FRR Threshold Curves and ROC.</strong> Left: False Acceptance Rate (FAR, blue) and False Rejection Rate (FRR, red) as a function of the decision threshold θ — EER intersection at θ = 0.1296 (green dashed). Right: Receiver Operating Characteristic (ROC) curve on buffalo_l LFW subset demonstrating near-perfect discrimination (AUC &approx; 1.0), confirming evaluator reliability for this benchmark domain.</p>
     </div>
 
     <!-- Study 1 quadrant detail -->
@@ -485,8 +498,8 @@
       <p>Full refitting of the primary paired LMM (D ~ Seed + (1|Case)), case-cluster bootstrap, and Table S9 descriptive statistics from the row-level dataset (N = 287 paired rows, 111 cases).</p>
       <div class="code-block">
 <span class="comment"># Clone repository</span>
-git clone https://github.com/eds-001/candidate-a-cross-person-identity.git
-cd candidate-a-cross-person-identity
+git clone https://github.com/edrees2022/face-identity-repair.git
+cd face-identity-repair
 
 <span class="comment"># Install pinned dependencies (Python 3.9)</span>
 pip install -r environment/requirements-analysis.txt
@@ -558,7 +571,7 @@ pip install -r environment/requirements-analysis.txt
   author    = {Anonymous Authors},
   year      = {2026},
   note      = {Preprint — under review. Code: 
-               https://github.com/eds-001/candidate-a-cross-person-identity}
+               https://github.com/edrees2022/face-identity-repair}
 }</div>
 
     <h3>Upstream Frameworks &amp; Acknowledgments</h3>
@@ -571,7 +584,7 @@ pip install -r environment/requirements-analysis.txt
     </ul>
 
     <h3>Data &amp; Rights</h3>
-    <p>This repository contains only sanitized structural metadata and frozen numerical summaries. No source face photographs, biometric embeddings, or private cohort identifiers are included. See <a href="https://github.com/eds-001/candidate-a-cross-person-identity/blob/main/LICENSE_STATUS.md">LICENSE_STATUS.md</a> for the current licensing status (formal grant pending institutional clearance).</p>
+    <p>This repository contains only sanitized structural metadata and frozen numerical summaries. No source face photographs, biometric embeddings, or private cohort identifiers are included. See <a href="https://github.com/edrees2022/face-identity-repair/blob/main/LICENSE_STATUS.md">LICENSE_STATUS.md</a> for the current licensing status (formal grant pending institutional clearance).</p>
   </div>
 </section>
 
@@ -579,7 +592,7 @@ pip install -r environment/requirements-analysis.txt
 
 <footer>
   <p>Cross-Person Identity Change Under Source-Coupled Multi-Human Generation: A Controlled UniPortrait Study</p>
-  <p style="margin-top:0.4rem;">Anonymous Authors · 2026 · <a href="https://github.com/eds-001/candidate-a-cross-person-identity">GitHub Repository</a></p>
+  <p style="margin-top:0.4rem;">Anonymous Authors · 2026 · <a href="https://github.com/edrees2022/face-identity-repair">GitHub Repository</a></p>
   <p style="margin-top:0.4rem;font-size:0.72rem;opacity:0.6;">No external tracking. No remote dependencies. All content self-contained.</p>
 </footer>
 
