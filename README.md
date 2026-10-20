@@ -17,7 +17,7 @@ We empirically characterize how **target and co-present protected identities cha
 
 **This study does not introduce a new generative model.** It evaluates three conditioning regimes already implemented in UniPortrait (A0, A1, A2) using continuous cosine-similarity transitions (ΔID) measured via InsightFace Buffalo_L.
 
-**[📄 Paper](docs/)** &nbsp;|&nbsp; **[🌐 Project Website](https://edrees2022.github.io/face-identity-repair/)** &nbsp;|&nbsp; **[💻 Code](#tier-1-quickstart)**
+**[📄 Paper]([docs](https://arxiv.org/pdf/2610.22746/)** &nbsp;|&nbsp; **[🌐 Project Website](https://edrees2022.github.io/face-identity-repair/)** &nbsp;|&nbsp; **[💻 Code](#tier-1-quickstart)**
 
 ---
 
